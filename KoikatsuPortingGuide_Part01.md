@@ -124,7 +124,7 @@ If your models bones are named in that way you can't understand it, feel free to
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/172276923-2b05194c-6d81-483e-b061-651bf4ca95eb.png)
 
-And don't forget rename model's materials. It's very important to follow some naming template because Unity will place all of the materials into one folder.
+And don't forget to rename the model materials. It's very important to follow some naming template because Unity will place all of the materials into one folder.
 It'll be very confusing to find the right material later.
 
 ## 4. Export to Unity
