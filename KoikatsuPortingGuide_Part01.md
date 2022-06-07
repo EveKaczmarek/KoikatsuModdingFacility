@@ -106,7 +106,7 @@ Find a part of armature that is looks like a parent for all other hair parts.
 ![screenshot19](https://user-images.githubusercontent.com/52298587/172278180-5149554d-1d35-49e4-a8fc-9828bb292147.png)
 
 Choose this option to select all child parts of armature and hit **Ctrl+I**, that will invert selection. Hit **Delete** and choose **Bones**.
-Et voila. All body boned are gone. 
+Et voila. All body bones are gone. 
 
 ![screenshot20](https://user-images.githubusercontent.com/52298587/172278555-47353281-0766-4695-be3c-f27974d5d44e.png)
 
