@@ -1,6 +1,6 @@
-# Greetings.
+# Model Porting Guide Part 1
 
-This is the first part in a series of guides on porting models into Koikatsu
+Greetings. This is the first part in a series of guides on porting models into Koikatsu
 By following this guides you will know how to:
 
 - Find suitable models
@@ -50,6 +50,7 @@ An easiest method to separate imported mesh mesh correctly.
 ![screenshot6](https://user-images.githubusercontent.com/52298587/172273241-acb589c6-702e-4534-98f9-9f70473839ba.png)
 
 Now our model is separated into many small parts (objects), it's up to you what's you want to save and what's you want to delete.
+Switch back to the **Layout** tab.
 
 ![screenshot7](https://user-images.githubusercontent.com/52298587/172273525-600bb542-b7a6-4bc7-a7d8-f2284388d51f.png)
 
@@ -58,6 +59,18 @@ Hide armature by clicking onto this eye icon, it'll be easy to clean up without 
 ![screenshot8](https://user-images.githubusercontent.com/52298587/172273977-66a1bcdf-4bd1-4763-b6ac-a2bbe324471a.png)
 
 Select all unneeded parts, hold a **Left Shift** to add selection and press **Delete** onto your keyboard or **Right Click**>**Delete** to delete all selected parts.
+
+![screenshot](https://user-images.githubusercontent.com/52298587/172954997-290d4a50-90f3-4e29-942f-52b846dc4973.png)
+
+If some parts of model are still needs to be separated, switch to **Modeling** tab.
+
+![dhLdKi6aPR](https://user-images.githubusercontent.com/52298587/172955387-f573cf8b-c9a4-4477-ac36-ae4d8cbd9433.png)
+
+Select a few dots of part that you want to separate further and hit **CTRL+L**
+
+![h1KVtvBdkB](https://user-images.githubusercontent.com/52298587/172955649-b3952af6-0631-4283-8019-6073a984fe02.png)
+
+Now all you need is separate this part by selection. Repeat this until done.
 
 ### 3c. Join parts (objects)
 
@@ -77,11 +90,12 @@ Nice. Repeat this with all the parts you think should be one.
 
 ![screenshot12](https://user-images.githubusercontent.com/52298587/172275311-5270d373-2c07-4eca-9723-0970a3f64400.png)
 
-Just delete this objects
+Just delete this objects by clicking on them via **RIGHT CLICK** and choosing **Delete Hierarchy**
 
 ![screenshot13](https://user-images.githubusercontent.com/52298587/172275510-85a840ff-035a-4586-81af-d05553cda169.png)
 
 And by holding **Right Shift** drag-and-drop your object out of parent object. Delete this parent object after doing that.
+Do this only if parent object are present, skip if armature are already on top of list.
 
 ![screenshot14](https://user-images.githubusercontent.com/52298587/172275842-f21ee7a2-3f3b-4569-9d95-e1570be2f14a.png)
 
@@ -89,7 +103,7 @@ Select mesh objects and delete **Blend Shape Keys** on all of them.
 
 ![screenshot15](https://user-images.githubusercontent.com/52298587/172277705-12335d51-5287-41cc-b92b-b5b840a895dc.png)
 
-Switch back to Layout tab
+Switch back to **Layout** tab
 
 ![screenshot16](https://user-images.githubusercontent.com/52298587/172277776-a64aaa55-fd3e-4ea5-9321-bf99b5e61c9d.png)
 
@@ -106,6 +120,15 @@ Find a part of armature that is looks like a parent for all other hair parts.
 ![screenshot19](https://user-images.githubusercontent.com/52298587/172278180-5149554d-1d35-49e4-a8fc-9828bb292147.png)
 
 Choose this option to select all child parts of armature and hit **Ctrl+I**, that will invert selection. Hit **Delete** and choose **Bones**.
+
+![5XkfkLCVjY](https://user-images.githubusercontent.com/52298587/172956826-5af39cb0-e263-4244-a681-a61175bc5dfc.png)
+
+Now we need to delete hidden bones that are completely useless outside MMD. Open this menu and switch layers.
+
+![9W0yPKT89D](https://user-images.githubusercontent.com/52298587/172956902-9e2717cf-b705-4d31-8a59-ee2ec654e003.png)
+
+Now you can see these bones, you need to get rid of them. Switch to another hidden layer when bones will be deleted. Don't forget to switch back to the main layer.
+
 Et voila. All body bones are gone. 
 
 ![screenshot20](https://user-images.githubusercontent.com/52298587/172278555-47353281-0766-4695-be3c-f27974d5d44e.png)
@@ -124,7 +147,11 @@ If your models bones are named in that way you can't understand it, feel free to
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/172276923-2b05194c-6d81-483e-b061-651bf4ca95eb.png)
 
-And don't forget to rename the model materials. It's very important to follow some naming template because Unity will place all of the materials into one folder.
+And don't forget to rename the model materials. 
+
+You can do this by the **Left Double Click** on name.
+
+It's very important to follow some naming template because Unity will place all of the materials into one folder.
 It'll be very confusing to find the right material later.
 
 ## 4. Export to Unity
