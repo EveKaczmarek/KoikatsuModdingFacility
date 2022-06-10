@@ -288,7 +288,7 @@ Count the number of objects, set this amout to **Size** (in my case it's 5) and 
 
 *WIP*
 
-![wQH3cKKthH](https://user-images.githubusercontent.com/52298587/172966999-c3bb186f-9dc2-488f-a5ac-fd7f237e3afb.png)
+![Unity_20220610_045116_3KoN3e305Z](https://user-images.githubusercontent.com/52298587/172974229-87393a52-dba5-4708-8e7b-48f247436517.png)
 
 Expand the model armature and find the first bone that is parent for others. Set this bone to the **Root Bone** in **Dynamic Bones** component.
 
@@ -308,7 +308,7 @@ Set the following settings:
 
 **Colliders - 10**
 
-![Unity_20220610_033907_MyZ14gK7Gf](https://user-images.githubusercontent.com/52298587/172967630-6a3c45d3-9146-459b-9dc6-e95a002ca1cd.png)
+![Unity_20220610_045156_kIaRRqAVHO](https://user-images.githubusercontent.com/52298587/172974289-316b8c90-6bd0-4a20-a6a4-0b173304a284.png)
 
 Click on the rectangle to the right of **Elasticity Distrib**, create two dots in the new window by double clicking. Right click onto the first dot, click on **Edit key...** and set **Time** to **0** and **Value** tot **1**. Do the same to the second but set **Time** to **1** and **Value** to **0**. 
 
