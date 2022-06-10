@@ -260,6 +260,14 @@ Click on the small rectangle to the right of **ShadowColor** and set **V** to 23
 
 Set texures by clicking onto **Select** button to the right of **MainTex**.
 
+![SEZbmeg0Zz](https://user-images.githubusercontent.com/52298587/172971010-933bacb6-0f58-42ad-b6e3-4bf8922ac4db.png)
+
+Choose the armature and change position, model should be somewhere around the floor level.
+
+![pLgnmTFuho](https://user-images.githubusercontent.com/52298587/172971330-50df4572-92ec-43de-956a-827ed5441c26.png)
+
+And be sure that model in not so big, use this picture as a reference to the model scale.
+
 ### 4e. Setting mod components
 
 ![XrPzAR7Bj2](https://user-images.githubusercontent.com/52298587/172966101-f75ea2e4-ca7f-40fb-bcb4-687ab7a81b76.png)
