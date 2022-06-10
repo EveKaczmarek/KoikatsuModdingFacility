@@ -219,7 +219,7 @@ Now you can drag-and-drop the object into **Prefab** folder, all further setting
 
 ![HqDuiXDNdD](https://user-images.githubusercontent.com/52298587/172962337-8407a86a-24ec-45bd-9247-9a1d98b97508.png)
 
-Open **Materials** folder. As you can see, the model are textureless and strange looking. Blender doesn't textures and materials, we need to import textures manually. Find the folder where the original model is located, find the textures inside it.
+Open **Materials** folder. As you can see, the model are textureless and strange looking. Blender doesn't export textures and materials, we need to import textures manually. Find the folder where the original model is located, find the textures inside it.
 
 ![XdO9mxEzIr](https://user-images.githubusercontent.com/52298587/172963235-1c0593c5-7255-407e-b4a6-cb3c04ca4622.png)
 
