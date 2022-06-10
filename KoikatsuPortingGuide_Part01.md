@@ -246,7 +246,7 @@ If your texture(s) are containing alpha channel (transparency), set **Alpha Is T
 
 ![WmqpqZg1Do](https://user-images.githubusercontent.com/52298587/172964757-a58a3494-70f8-420a-9695-dc36079ce82d.png)
 
-Open Blender again and open object material settins. Now you can see which texutre belongs to which material. Refer to these settings when you will set textures in Unity.
+Open Blender again and open object material settins. Now you can see which texture belongs to which material. Refer to these settings when you will set textures in Unity.
 
 ![dTaPE1ganU](https://user-images.githubusercontent.com/52298587/172965201-bb21f60c-bf15-49a0-af6a-6babcfad91bf.png)
 
