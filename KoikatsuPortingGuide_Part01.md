@@ -27,7 +27,7 @@ As example, I want to port only hair model into Koikatsu. So, how to separate im
 
 ### 3a. Mesh separation
 
-Select your model via **LEFT CLICK**, it must have an orange outline after selection.
+Select your model with the **LEFT CLICK**, it must have an orange outline after selection.
 
 ![screenshot2](https://user-images.githubusercontent.com/52298587/172272029-8f7c990f-a51d-493f-82fe-265c97f1f717.png)
 
@@ -90,7 +90,7 @@ Nice. Repeat this with all the parts you think should be one.
 
 ![screenshot12](https://user-images.githubusercontent.com/52298587/172275311-5270d373-2c07-4eca-9723-0970a3f64400.png)
 
-Just delete this objects by clicking on them via **RIGHT CLICK** and choosing **Delete Hierarchy**
+Just delete this objects by clicking on them with the **RIGHT CLICK** and choosing **Delete Hierarchy**
 
 ![screenshot13](https://user-images.githubusercontent.com/52298587/172275510-85a840ff-035a-4586-81af-d05553cda169.png)
 
@@ -155,3 +155,166 @@ It's very important to follow some naming template because Unity will place all 
 It'll be very confusing to find the right material later.
 
 ## 4. Export to Unity
+
+### 4a. Exporting FBX
+
+![ZzP6BfxXU5](https://user-images.githubusercontent.com/52298587/172958372-52242e1a-31e9-4154-9ce3-6bc45f146ba1.png)
+
+Now this model are ready to be exported. 
+
+![l6dTvv9Ecw](https://user-images.githubusercontent.com/52298587/172958451-6be94f1a-e457-4fd4-babf-b8fd77aa3f20.png)
+
+Open this menu and choose exporting to **FBX**.
+
+![WlqdaI0llM](https://user-images.githubusercontent.com/52298587/172958661-ce3f6aed-5ce7-418e-b4a2-a5d4ded723ea.png)
+
+Set this exporting options in new opened window, choose exporting path and hit **Export FBX**.
+Do no close Blender, soon we will back there soon.
+
+### 4b. Importing model to Unity
+
+![dwI5UrY5UC](https://user-images.githubusercontent.com/52298587/172958855-69d10a04-216c-4643-9a7b-94469b5aaaac.png)
+
+Open modding project and wait, Unity will load exported model, it may take some time.
+
+![KJzjXXC7Pl](https://user-images.githubusercontent.com/52298587/172959482-f5fb434e-756f-4ea4-9526-ddaa92ad1ee8.png)
+
+Open mod folder and drag-and-drop the model to the left window.
+
+### 4c. Preparing a prefab
+
+![DgZMuElO7g](https://user-images.githubusercontent.com/52298587/172959896-b487f7a5-debb-4ec8-b0cd-15d0ca6a019e.png)
+
+Expand model hierarchy and delete **Animator** component.
+
+![3NJ33qNTYt](https://user-images.githubusercontent.com/52298587/172960170-b066cb07-c981-4e1e-88d9-34d587dc938b.png)
+
+Hit on the model with the **Right Click** and choose **Create Empty**
+
+![928YRj4FEx](https://user-images.githubusercontent.com/52298587/172960412-7d6a15e5-d7f0-429f-ab58-abd131bb830e.png)
+
+Raname empty object to **N_move**. 
+
+![U1tG3NBc7K](https://user-images.githubusercontent.com/52298587/172960539-f8d2edb6-c75d-462c-9c7d-06570a418b9d.png)
+
+Move **N_move** object to the top and drag **armature** into it.
+
+![XnFKijjRMC](https://user-images.githubusercontent.com/52298587/172960895-3129d0d0-8d09-459e-a867-e109e4ae8bfe.png)
+
+Unity will warn you about some "breakages", just press **Continue**.
+
+![5ogNZ5u7RE](https://user-images.githubusercontent.com/52298587/172961214-3e701656-43aa-46a7-bbbe-24a197155a01.png)
+
+Select the objects under the armature and set **Update when offscreen** in the right window.
+
+![hjd8g1TMtK](https://user-images.githubusercontent.com/52298587/172961356-ac045f6b-1307-459a-a80a-a60f8f7ec261.png)
+
+You can rename the object if you want to. 
+
+![4d3EctxWcC](https://user-images.githubusercontent.com/52298587/172961529-b0644734-aea6-44aa-9b9d-415123e6f142.png)
+
+Now you can drag-and-drop the object into **Prefab** folder, all further settings must be applied to **Prefab** only.
+
+### 4d. Correcting textures and materials
+
+![HqDuiXDNdD](https://user-images.githubusercontent.com/52298587/172962337-8407a86a-24ec-45bd-9247-9a1d98b97508.png)
+
+Open **Materials** folder. As you can see, the model are textureless and strange looking. Blender doesn't textures and materials, we need to import textures manually. Find the folder where the original model is located, find the textures inside it.
+
+![XdO9mxEzIr](https://user-images.githubusercontent.com/52298587/172963235-1c0593c5-7255-407e-b4a6-cb3c04ca4622.png)
+
+Next, open **Koikatsu** folder, **[MODDING] Tools**, **KK Image Converter** and open **KKImageConverter.exe**.
+
+![hA72GFcJJn](https://user-images.githubusercontent.com/52298587/172963413-ff3f93fc-91ba-4436-befa-38186be1a8e3.png)
+
+Choose **output folder**, for example, your Desktop or anything else, drag-and-drop model texturel onto this window and hit **Convert all**.
+Close the window when conversion is completed.
+
+![QpEMOwQiJm](https://user-images.githubusercontent.com/52298587/172963865-e1da320a-123b-4616-88d6-3fae16276a33.png)
+
+Locate converted texture(s) and drop them into the Textures folder.
+
+![Unity_20220610_025710_pQSeT1Q3lf](https://user-images.githubusercontent.com/52298587/172963971-9af25da2-d5ec-427a-8d1f-b309e7cd752c.png)
+
+Select texture(s) and set these parameters.
+
+**sRGB (Color Texture) - TRUE**
+
+**Compression - High Quality**
+
+If your texture(s) are containing alpha channel (transparency), set **Alpha Is Transparency**.
+
+![WmqpqZg1Do](https://user-images.githubusercontent.com/52298587/172964757-a58a3494-70f8-420a-9695-dc36079ce82d.png)
+
+Open Blender again and open object material settins. Now you can see which texutre belongs to which material. Refer to these settings when you will set textures in Unity.
+
+![dTaPE1ganU](https://user-images.githubusercontent.com/52298587/172965201-bb21f60c-bf15-49a0-af6a-6babcfad91bf.png)
+
+Open Materials folder in Unity and set shaders. For hair it will be **Shader Forge > main_hair** and **Shader Forge > main_item_studio** for accessiories.
+
+![q8qaf3dMHW](https://user-images.githubusercontent.com/52298587/172965562-2bde6b93-39e0-4602-af29-b4d8810dee54.png)
+
+Click on the small rectangle to the right of **ShadowColor** and set **V** to 230.
+
+![EMCmydjLRR](https://user-images.githubusercontent.com/52298587/172965840-d54d81ff-f850-4188-a8d5-b0604a30e477.png)
+
+Set texures by clicking onto **Select** button to the right of **MainTex**.
+
+### 4e. Setting mod components
+
+![XrPzAR7Bj2](https://user-images.githubusercontent.com/52298587/172966101-f75ea2e4-ca7f-40fb-bcb4-687ab7a81b76.png)
+
+Select **prefab** and add the following components:
+
+**Cha Accessiory Component**
+
+**Dynamic Bone**
+
+You can find them in opened menu by simply typing the component name on the keyboard.
+
+![Unity_20220610_032603_9AURcqWCsS](https://user-images.githubusercontent.com/52298587/172966531-f229f644-5543-45e0-82ac-81a0dd7f7109.png)
+
+Count the number of objects, set this amout to **Size** (in my case it's 5) and distribute them by elements. Click on the small dot to the right of **None** to open a menu.
+
+## 5. Creating hair physics
+
+*WIP*
+
+![wQH3cKKthH](https://user-images.githubusercontent.com/52298587/172966999-c3bb186f-9dc2-488f-a5ac-fd7f237e3afb.png)
+
+Expand the model armature and find the first bone that is parent for others. Set this bone to the **Root Bone** in **Dynamic Bones** component.
+
+Set the following settings:
+
+**Damping - 0.2**
+
+**Elasticity - 0.1**
+
+**Stiffness - 0.1**
+
+**Inert - 0**
+
+**Radius - 0**
+
+**Force - -0.001**
+
+**Colliders - 10**
+
+![Unity_20220610_033907_MyZ14gK7Gf](https://user-images.githubusercontent.com/52298587/172967630-6a3c45d3-9146-459b-9dc6-e95a002ca1cd.png)
+
+Click on the rectangle to the right of **Elasticity Distrib**, create two dots in the new window by double clicking. Right click on first dot, click on **Edit key...** and set **Time** to **0** and **Value** tot **1**. Do the same to the second but set **Time** to **1** and **Value** to **0**. 
+
+![i0U2eb9T3n](https://user-images.githubusercontent.com/52298587/172968249-bcf70a79-ffc2-4d4f-a1e6-8f72b661a754.png)
+
+Now you can see the sinusoid that are going from **0:1** to **1:0**. Click onto the small gear in the left corner and click on save. Now you can use this sinusoid for another **Distrib** options. 
+
+![LHa5laehle](https://user-images.githubusercontent.com/52298587/172968523-a655f128-e6f9-4e7f-bd4d-288d75c97d99.png)
+
+Set only on **Elasticity Distrib** and **Stiffness Distrib**.
+
+These physics settings are pretty general and you can achieve a nice motion by using them.
+
+![fvYflWl1jm](https://user-images.githubusercontent.com/52298587/172968887-96fbcbc0-20cf-43c2-8fe9-ba83b61c8665.png)
+
+Now you can save your progress in prefab settings.
+
