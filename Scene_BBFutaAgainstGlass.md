@@ -55,7 +55,7 @@ Please, refer to the Twitter post for for a reference image.
 
 3. Bloom
 
-        Intencity: 4.03
+        Intensity: 4.03
 
         Threshold: 1.10
 
@@ -69,9 +69,9 @@ Please, refer to the Twitter post for for a reference image.
 
         Color: 255, 137, 0
 
-4. Chromatic Abberation 
+4. Chromatic Aberration 
 
-        Intencity: 0.04
+        Intensity: 0.04
 
 5. Color Grading
 
@@ -101,6 +101,6 @@ Please, refer to the Twitter post for for a reference image.
 
         Focal Length: 50.00
 
-        Max Blue Size: Very Large
+        Max Blur Size: Very Large
 
-        Auco Focus: Selected Character
+        Auto Focus: Selected Character
