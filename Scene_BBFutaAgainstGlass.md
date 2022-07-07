@@ -1,13 +1,13 @@
 # Description of scene composition 
 ### PLEASE, DO NOT EXPORT THE CHARACTER CARD FROM THIS SCENE, IT'S NOT PRODUCTION-READY AND I CANNOT GUARANTEE FLAWLESS WORK OF THIS CARD. DOWNLOAD IT IN MY TWITTER PROFILE INSTEAD. THANK YOU.
 
-**Character's card**: 
+**Character's card**: _[link](https://twitter.com/EveKaczmarek_/status/1524003821327994881)_
 
-**Scene preview**: ![download](https://twitter.com/EveKaczmarek_/status/1538485996882362368)
+**Scene preview**: _[link](https://twitter.com/EveKaczmarek_/status/1538485996882362368)_
 
-**Scene DL**: _link_
+**Scene DL**: _[link](https://drive.proton.me/urls/TWZ61T8HZ0#SFmx8JBPlJUY)_
 
-**.KRA file for Krita**: _link_
+**.KRA file for Krita**: _[link](https://drive.proton.me/urls/WN87PKFFXR#z2bDj2653kgf)_
 
 
 Please, refer to the Twitter post for for a reference image.
