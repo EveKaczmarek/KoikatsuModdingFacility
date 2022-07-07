@@ -1,9 +1,9 @@
 # Description of scene composition 
 ### PLEASE, DO NOT EXPORT THE CHARACTER CARD FROM THIS SCENE, IT'S NOT PRODUCTION-READY AND I CANNOT GUARANTEE FLAWLESS WORK OF THIS CARD. DOWNLOAD IT IN MY TWITTER PROFILE INSTEAD. THANK YOU.
 
-**Character's card**: _link_
+**Character's card**: 
 
-**Scene preview**: _link_
+**Scene preview**: ![download](https://twitter.com/EveKaczmarek_/status/1538485996882362368)
 
 **Scene DL**: _link_
 
