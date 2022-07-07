@@ -81,7 +81,7 @@ Please, refer to the Twitter post for for a reference image.
 
         Temperature: 0.00
 
-        Tint: 6.36
+        Tint: 10.97
 
         Post Exposure: 0.00
 
