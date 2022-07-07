@@ -33,7 +33,7 @@ Please, refer to the Twitter post for for a reference image.
 
         Bias: 0.25
 
-        Lightning Contribution: 1.00
+        Lighting Contribution: 1.00
 
         Color: 0, 0, 0 
 
