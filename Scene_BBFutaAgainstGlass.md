@@ -1,4 +1,14 @@
 # Description of scene composition 
+### PLEASE, DO NOT EXPORT THE CHARACTER CARD FROM THIS SCENE, IT'S NOT PRODUCTION-READY AND I CANNOT GUARANTEE FLAWLESS WORK OF THIS CARD. DOWNLOAD IT IN MY TWITTER PROFILE INSTEAD. THANK YOU.
+
+**Character's card**: _link_
+
+**Scene preview**: _link_
+
+**Scene DL**: _link_
+
+**.KRA file for Krita**: _link_
+
 
 Please, refer to the Twitter post for for a reference image.
 
@@ -14,7 +24,7 @@ Please, refer to the Twitter post for for a reference image.
 
 * Penis physics are controlled manually by KKPE.
 
-* Ejaculation props looks different. I've manually added motion blur in Krita so I'll provide a .KRA file for reference. (link)
+* Ejaculation props looks different. I've manually added motion blur in Krita so I provide a .KRA file for reference.
 
 * Hard transitions between clipped and non-clipped parts was softened manually in Krita, please refer to a .KRA file.
 
