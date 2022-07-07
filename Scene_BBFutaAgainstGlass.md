@@ -25,7 +25,7 @@ Please, refer to the Twitter post for for a reference image.
 
         Downsampling: 1.00
 
-        Intensity: 5.03
+        Intensity: 6.02
 
         Radius: 0.18
 
