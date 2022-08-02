@@ -199,4 +199,7 @@ Top clothes are in "105" category, you can check this catergory in game by right
 
 Now we can assemble this mod.
 
+![Koikatu_20220802_133556_HuTUFN0Gbn](https://user-images.githubusercontent.com/52298587/182354960-f2621568-85aa-4468-a5c1-f7fcdd50a1aa.png)
 
+If you're think that everything looks ok, congratulations, you did it.
+If it's not, well, try to move the model in Blender a little bit and repeat this step again.
