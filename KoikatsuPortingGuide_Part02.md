@@ -2,7 +2,7 @@
 
 Clothings porting is a MUCH MORE complex process than anything else that was described previously.
 Be ready that it will take a LOT of time and there's no guarantee that it will work eventually.
-This guide recomendations WILL NOT allow you to make a paintable nor a physical clothes.
+This guide recomendations WILL NOT allow you to make a colorable nor a physical clothes.
 You have been warned.
 
 
@@ -77,7 +77,7 @@ Now you can open exported FBX in Blender.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182185277-7e19997e-23da-4829-bdc6-55e27068387c.png)
 
-The model is imported, but where it is? 
+The model imported, but where it is? 
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182185421-4042fba6-f293-4378-96c3-878c1d2b6c61.png)
 
@@ -169,13 +169,13 @@ n_top_a - top state 0
 
 n_top_b - top state 1
 
-n_bot_a - bot state 0
+n_bot_a - bottom state 0
 
-n_bot_b - bot state 1
+n_bot_b - bottom state 1
 
 State 0 - fully on
 
-State 1 - half on
+State 1 - half off
 
 
 If you don't know what to do and you have only one object, just place it in "n_top_a" if it's the top clothes and if it's the bottom clothes in "n_bot_a".
