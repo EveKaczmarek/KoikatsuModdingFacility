@@ -2,23 +2,23 @@
 
 Clothings porting is a MUCH MORE complex process than anything else that was described previously.
 Be ready that it will take a LOT of time and there's no guarantee that it will work eventually.
-This guide recomendations WILL NOT allow you to make a colorable nor a physical clothes.
+This guide's recommendations WILL NOT allow you to make colorable or physical clothes.
 You have been warned.
 
 
 ## 1. Finding the most suitable "donor" model
 
-Every movement is driven by the bones, and every bone influence is determined by a weights.
-Weights is the crucial part when we're talking about the clothes porting. 
-You can't just go straightforward and insert it into the game, it'll be just static model.
-Without right armature and weights the game will not recognize imported model as the clothings.
+Every movement is driven by the bones, and every bone's influence is determined by weights.
+Weights are the crucial part when we're talking about clothes porting. 
+You can't just go straight and insert it into the game, it'll be just a static model.
+Without the right armature and weights the game will not recognize the imported model as the clothing.
 So, we need to find and "borrow" them.
 
-Open the model in Blender that you want to port. As example, I'll use Enterprise and her coat.
+Open the model in Blender that you want to port. For example, I'll use Enterprise and her coat.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182175591-01bdecaa-016b-4150-b110-cd93a38d39d0.png)
 
-So, the model is here. Now we need to get rid from every part that is not her coat.
+So, the model is here. Now we need to get rid of every part that is not her coat.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182177338-302ca83b-261d-45c2-8f44-6ca6525cc42e.png)
 
@@ -26,8 +26,8 @@ Done. Open the game now.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182177780-4397ab1c-96d9-40c8-bef1-d7204ef24203.png)
 
-So we need to find a donor model that will allows us to transfer mesh weights.
-But what model is the most suitable for this? Let's find out the clothes that have an almost the same shape as coat model.
+So we need to find a donor model that will allow us to transfer mesh weights.
+But what model is the most suitable for this? Let's find out the clothes that have almost the same shape as the coat model.
 It's the "Naked coat (no belt)" in my case. 
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182179822-9e5db838-e218-4005-84eb-496871ae471b.png)
@@ -41,7 +41,7 @@ If you're using BR from ScrewThisNoise, it's located in the game's folder called
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182180750-bd2e5393-3de1-4b75-b83a-3803f7b82266.png)
 
-Here's how it looks. But now we need to back to the game and find what acrhive contains that model that we want to extract.
+Here's how it looks. But now we need to back to the game and find what archive contains that model that we want to extract.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182181275-0063735a-8888-4de2-b84d-bb4cfc7c2ea5.png)
 
@@ -49,7 +49,7 @@ Find these clothes in that menu and click RMB on the active box. Click LMB on "P
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182181544-2ab4d6d9-665b-40e4-8aa3-1c25002c446c.png)
 
-Now we have the mod's name and name of the asset. Locate this mod by any convenient tool and extract it in any convenient folder.
+Now we have the mod's name and the name of the asset. Locate this mod by any convenient tool and extract it in any convenient folder.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182182337-f5f74f4d-9c28-4018-9d19-7c238d37d374.png)
 
@@ -57,11 +57,11 @@ Open SB3Utility again and locate the extracted AssetBundles, in my case I need t
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182183057-23e3cdca-6d49-4ec5-8c87-8a16fe370d5c.png)
 
-Bundle is opened, now we're opening asset by double-clicking in the left menu.
+The bundle is opened, now we're opening the asset by double-clicking in the left menu.
 
 ![SB3UtilityGUI_20220801_182233_Iv2tKcIJOr](https://user-images.githubusercontent.com/52298587/182183572-14545fc7-5e19-41bc-9a14-ea17c2444e0b.png)
 
-Now asset is opened and we need to extract the meshes. Switch to this tab.
+Now the asset is opened and we need to extract the meshes. Switch to this tab.
 
 ![SB3UtilityGUI_20220801_182558_9FscKaQsQU](https://user-images.githubusercontent.com/52298587/182184259-21cdc16a-3dbc-4a14-9667-52fa8170ef18.png)
 
@@ -71,13 +71,13 @@ Choose one of these meshes and press Export.
 
 Mesh is exported, you can find it near the unity3d file that you're opened in SB3Utility.
 
-## 3. Adjusting position and transfering weights
+## 3. Adjusting position and transferring weights
 
 Now you can open exported FBX in Blender.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182185277-7e19997e-23da-4829-bdc6-55e27068387c.png)
 
-The model imported, but where it is? 
+The model was imported, but where it is? 
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182185421-4042fba6-f293-4378-96c3-878c1d2b6c61.png)
 
@@ -101,11 +101,11 @@ After some time it'll look like this. I had to scale down it a little bit, now I
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182197671-a839ab9f-88be-43e8-848c-43fc7fc07a62.png)
 
-If you're think it's ready, Apply transformations in this menu.
+If you think it's ready, Apply transformations in this menu.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182197947-1946b3a8-3246-4d55-b3d7-b2e1b741d37c.png)
 
-Now we're need to change the parent. 
+Now we need to change the parent. 
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182198142-8a593eb3-c54e-4320-9a97-71213150e721.png)
 
@@ -129,7 +129,7 @@ Open the Transfer Weights menu.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182198985-cf4e2c9c-09c7-48b7-a804-da1068db5c3c.png)
 
-This little tab will appear in the left bottom corner. Expand it to see more trasfer settings.
+This little tab will appear in the left bottom corner. Expand it to see more transfer settings.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182199215-c8a7199d-0569-4b0b-bdb0-542fb7088b0a.png)
 
@@ -137,20 +137,20 @@ Set the things like this.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182199307-7cfca186-5db1-4b6d-84d6-456fa2e331b8.png)
 
-Now you can see that the model was painted in diffrent colors, that means the weights was successfully transfered from the donor model.
+Now you can see that the model was painted in different colors, which means the weights were successfully transferred from the donor model.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182199555-3e727b66-cefa-4814-8183-301211d67c61.png)
 
-And now you can delete the original model, switch to the Pose Mode and see how it's moving. 
-If you can drag clothes by moving bones than everything is okay and you can export this model.
+And now you can delete the original model, switch to Pose Mode and see how it's moving. 
+If you can drag clothes by moving bones then everything is okay and you can export this model.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182346113-5182902d-c3d2-4863-8996-edaa6bd76b1e.png)
 
-Clear your transforms befoure exporting.
+Clear your transforms before exporting.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182346292-daeb54e9-dd1f-46da-92ec-b13c596fb433.png)
 
-And don't forget to apply the general transforms that was done before.
+And don't forget to apply the general transformations that were done before.
 
 ## 3. Preparing the mod
 
@@ -187,19 +187,19 @@ And don't forget to delete the previous child object.
 
 ![screenshot](https://user-images.githubusercontent.com/52298587/182350035-5302df30-2207-47f9-b63e-ace8540ac251.png)
 
-Set the Cha Clothes Component and expact the Rend Normal 01 list, set the object there as the only one in list.
-Done. Now you can save your prefab and prepare the csv file.
+Set the Cha Clothes Component and extend the Rend Normal 01 list, and set the object there as the only one in the list.
+Done. Now you can save your prefab and prepare the CSV file.
 
-Here's the example:
+Here's an example:
 
     [ID],5,1,[NAME],abdata,[PREFAB UNITY3D FILE],[PREFAB NAME],0,0,0,0,3,[BODYMASK UNITY3D FILE],[BODY MASK TEXTURE],0,0,0,0,0,0,0,0,0,0,0,[THUMBNAIL UNITY3D FILE],[THUMBNAIL]
 
-Clothes category are STRICTLY depends on the digits in the first line of csv file. 
-Top clothes are in "105" category, you can check this catergory in game by right clicking on the clothes boxes in the clothes menu.
+The clothes category is STRICTLY dependent on the digits in the first line of the CSV file. 
+Top clothes are in the "105" category, you can check this category in the game by right-clicking on the clothes boxes in the clothes menu.
 
 Now we can assemble this mod.
 
 ![Koikatu_20220802_133556_HuTUFN0Gbn](https://user-images.githubusercontent.com/52298587/182354960-f2621568-85aa-4468-a5c1-f7fcdd50a1aa.png)
 
-If you're think that everything looks ok, congratulations, you did it.
+If you think that everything looks ok, congratulations, you did it.
 If it's not, well, try to move the model in Blender a little bit and repeat this step again.
